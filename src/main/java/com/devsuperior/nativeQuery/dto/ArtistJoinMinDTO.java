@@ -5,19 +5,19 @@ import com.devsuperior.nativeQuery.projections.ArtistJoinMinProjection;
 public class ArtistJoinMinDTO {
 	
 	private String name;
-	private String contry;
+	private String country;
 	
 	public ArtistJoinMinDTO() {
 	}
 
-	public ArtistJoinMinDTO(String name, String contry) {
+	public ArtistJoinMinDTO(String name, String country) {
 		this.name = name;
-		this.contry = contry;
+		this.country = country;
 	}
 	
 	public ArtistJoinMinDTO(ArtistJoinMinProjection projection) {
 		name = projection.getName();
-		contry = projection.getContry();
+		country = projection.getCountry();
 	}
 
 	public String getName() {
@@ -28,11 +28,11 @@ public class ArtistJoinMinDTO {
 		this.name = name;
 	}
 
-	public String getContry() {
-		return contry;
+	public String getCountry() {
+		return country;
 	}
 
-	public void setContry(String contry) {
-		this.contry = contry;
+	public void setCountry(String contry) {
+		this.country = contry;
 	}
 }

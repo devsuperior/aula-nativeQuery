@@ -40,7 +40,7 @@ public class NativeQueryApplication implements CommandLineRunner {
 		
 		System.out.println("\n\n *** Exemplo: Join Simples:");
 		for (ArtistJoinMinDTO obj : result2) {
-			System.out.println(obj.getName() + " - " + obj.getContry());
+			System.out.println(obj.getName() + " - " + obj.getCountry());
 		}
 		
 	}

@@ -9,7 +9,7 @@ CREATE TABLE artists (
   name            VARCHAR(100) NOT NULL,
   genre_id        INTEGER,
   birthdate   	  DATE,
-  contry      	  VARCHAR(30),
+  country      	  VARCHAR(30),
   PRIMARY KEY(id),
   FOREIGN KEY(genre_id) REFERENCES genres
 );

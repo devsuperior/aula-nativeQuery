@@ -13,10 +13,10 @@ public interface ArtistRepository extends JpaRepository<Artist, Long> {
 
 	@Query(nativeQuery = true, value = "SELECT name " + 
 			"FROM artists " + 
-			"WHERE UPPER(contry) LIKE UPPER(:contry)")
-	List<ArtistMinProjection> findByCountry(String contry);
+			"WHERE UPPER(country) LIKE UPPER(:country)")
+	List<ArtistMinProjection> findByCountry(String country);
 	
-	@Query(nativeQuery = true, value = "SELECT artists.name, artists.contry " + 
+	@Query(nativeQuery = true, value = "SELECT artists.name, artists.country " + 
 			"FROM artists " + 
 			"INNER JOIN genres ON artists.genre_id = genres.id " + 
 			"WHERE UPPER(genres.name) = UPPER(:genreName)")

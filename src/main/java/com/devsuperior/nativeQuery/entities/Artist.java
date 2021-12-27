@@ -16,7 +16,7 @@ public class Artist {
 	private Long id;
 	private String name;
 	private Instant birthdate;
-	private String contry;
+	private String country;
 	
 	@ManyToOne
 	@JoinColumn(name = "id_genres")
@@ -25,11 +25,11 @@ public class Artist {
 	public Artist() {
 	}
 
-	public Artist(Long id, String name, Instant birthdate, String contry, Genre genre) {
+	public Artist(Long id, String name, Instant birthdate, String country, Genre genre) {
 		this.id = id;
 		this.name = name;
 		this.birthdate = birthdate;
-		this.contry = contry;
+		this.country = country;
 		this.genre = genre;
 	}
 
@@ -57,12 +57,12 @@ public class Artist {
 		this.birthdate = birthdate;
 	}
 
-	public String getContry() {
-		return contry;
+	public String getCountry() {
+		return country;
 	}
 
-	public void setContry(String contry) {
-		this.contry = contry;
+	public void setCountry(String country) {
+		this.country = country;
 	}
 
 	public Genre getGenre() {
