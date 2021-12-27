@@ -19,7 +19,7 @@ public class Artist {
 	private String country;
 	
 	@ManyToOne
-	@JoinColumn(name = "id_genres")
+	@JoinColumn(name = "genre_id")
 	private Genre genre;
 	
 	public Artist() {
